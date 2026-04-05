@@ -11,6 +11,9 @@ namespace cybersecurity_chatbot
         static void Main(string[] args)
         {//start of main method
 
+            //Creating an instance of Audio_greeting class with a constructor
+            new Audio_greeting();
+
 
         }//end of main method
 
