@@ -13,7 +13,8 @@ namespace cybersecurity_chatbot
 
             //Creating an instance of Audio_greeting class with a constructor
             new Audio_greeting();
-
+            //Creating an instance of Ascii_Logo class with constructor
+            new Ascii_Logo();
 
         }//end of main method
 
