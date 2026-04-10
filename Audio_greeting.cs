@@ -52,5 +52,7 @@ namespace cybersecurity_chatbot
             }//end of catch statement
 
         }//end of method
+
     }//end of class
+
 }//end of namespace

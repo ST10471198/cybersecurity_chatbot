@@ -90,6 +90,13 @@ namespace cybersecurity_chatbot
 
         }//end of empty() method
 
+        public string get_username()
+        {//start of method
+
+            return username;
+
+        }//end of method
+
     }//end of class
 
 }//end of namespace
