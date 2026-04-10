@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ main, master ]
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: windows-latest
@@ -35,7 +38,6 @@ jobs:
       run: |
         Write-Host "Checking for required files..."
         
-        # Check if WAV file exists
         if (Test-Path "Voice_Recording.wav") {
             Write-Host "✓ Voice_Recording.wav found"
         } else {
@@ -43,7 +45,6 @@ jobs:
             exit 1
         }
         
-        # Check if logo image exists
         if (Test-Path "logo.jpeg") {
             Write-Host "✓ logo.jpeg found"
         } else {
@@ -51,7 +52,6 @@ jobs:
             exit 1
         }
         
-        # Check if Program.cs exists
         if (Test-Path "Program.cs") {
             Write-Host "✓ Program.cs found"
         } else {
